@@ -1,0 +1,60 @@
+2024-07-28 20:15:42,633 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-07-28 20:15:43,151 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-07-28 20:15:48,133 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-07-28 20:15:48,959 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-07-28 20:15:49,812 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-07-28 20:15:50,342 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-07-28 20:15:55,244 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-07-28 20:15:56,116 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-07-28 20:15:59,884 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-07-28 20:15:59,990 - INFO - Checked for unread messages. Duration: 20.40 seconds
+2024-07-28 20:15:59,990 - WARNING - Duration exceeded 10 seconds: 20.40 seconds
+2024-07-28 20:15:59,990 - INFO - Skipping blacklisted contact: OC Community 8
+2024-07-28 20:15:59,991 - INFO - Skipping blacklisted contact: Mü\u011dï\u0175@r@
+2024-07-28 20:16:00,267 - INFO - Checked for unread messages. Duration: 20.65 seconds
+2024-07-28 20:16:00,267 - WARNING - Duration exceeded 10 seconds: 20.65 seconds
+2024-07-28 20:16:00,267 - INFO - Skipping blacklisted contact: OC Community 8
+2024-07-28 20:16:00,268 - INFO - Skipping blacklisted contact: Mü\u011dï\u0175@r@
+2024-07-28 20:17:00,325 - INFO - Checked for unread messages. Duration: 0.33 seconds
+2024-07-28 20:17:00,326 - INFO - Skipping blacklisted contact: OC Community 8
+2024-07-28 20:17:00,326 - INFO - Skipping blacklisted contact: Mü\u011dï\u0175@r@
+2024-07-28 20:17:00,391 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-07-28 20:17:00,479 - INFO - Checked for unread messages. Duration: 0.20 seconds
+2024-07-28 20:17:00,480 - INFO - Skipping blacklisted contact: OC Community 8
+2024-07-28 20:17:00,480 - INFO - Skipping blacklisted contact: Mü\u011dï\u0175@r@
+2024-07-28 20:17:05,189 - ERROR - An error occurred while sending message to Emmanuel: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=127.0.6533.73); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF773079632+30946]
+	(No symbol) [0x00007FF77302E3C9]
+	(No symbol) [0x00007FF772F26FDA]
+	(No symbol) [0x00007FF772F2DA57]
+	(No symbol) [0x00007FF772F2FD31]
+	(No symbol) [0x00007FF772F2FDD0]
+	(No symbol) [0x00007FF772F7F2F3]
+	(No symbol) [0x00007FF772F7E576]
+	(No symbol) [0x00007FF772FC4BE0]
+	(No symbol) [0x00007FF772F9CA6A]
+	(No symbol) [0x00007FF772FBB041]
+	(No symbol) [0x00007FF772F9C813]
+	(No symbol) [0x00007FF772F6A6E5]
+	(No symbol) [0x00007FF772F6B021]
+	GetHandleVerifier [0x00007FF7731AF83D+1301229]
+	GetHandleVerifier [0x00007FF7731BBDB7+1351783]
+	GetHandleVerifier [0x00007FF7731B2A03+1313971]
+	GetHandleVerifier [0x00007FF7730ADD06+245686]
+	(No symbol) [0x00007FF77303758F]
+	(No symbol) [0x00007FF773033804]
+	(No symbol) [0x00007FF773033992]
+	(No symbol) [0x00007FF77302A3EF]
+	BaseThreadInitThunk [0x00007FFFCBDF7374+20]
+	RtlUserThreadStart [0x00007FFFCD41CC91+33]
+
+2024-07-28 20:17:05,224 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2024-07-28 20:17:06,136 - INFO - Message sent to Emmanuel: bot response
+2024-07-28 20:18:05,399 - INFO - Checked for unread messages. Duration: 0.21 seconds
+2024-07-28 20:18:05,399 - INFO - Skipping blacklisted contact: OC Community 8
+2024-07-28 20:18:05,400 - INFO - Skipping blacklisted contact: Mü\u011dï\u0175@r@
+2024-07-28 20:18:06,341 - INFO - Checked for unread messages. Duration: 0.20 seconds
+2024-07-28 20:18:06,342 - INFO - Skipping blacklisted contact: OC Community 8
+2024-07-28 20:18:06,342 - INFO - Skipping blacklisted contact: Mü\u011dï\u0175@r@
