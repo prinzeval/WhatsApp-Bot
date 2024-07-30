@@ -93,6 +93,22 @@ def send_whatsapp_message(recipient_name: str, message_text: str):
             
             logger.info(f"Message sent to {recipient_name}: {message_text}")
 
+            # Close the chat box
+            try:
+                # Wait for the close chat button to be clickable
+                close_chat_icon = WebDriverWait(driver, 10).until(
+                    EC.element_to_be_clickable((By.XPATH, '//*[@id="main"]/header/div[3]/div/div[3]/div/div/span'))
+                )
+                close_chat_icon.click()
+                
+                close_chat_button = WebDriverWait(driver, 10).until(
+                    EC.element_to_be_clickable((By.XPATH, '//*[@id="app"]/div/span[5]/div/ul/div/div/li[3]'))
+                )
+                close_chat_button.click()
+
+            except TimeoutException:
+                logger.warning("Failed to close chat box. Elements not clickable.")
+
         except TimeoutException:
             logger.warning(f"Message input field not found for {recipient_name}. Clearing search input and skipping this contact.")
             # Clear the search input
