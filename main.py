@@ -38,22 +38,16 @@ def run_monitoring_loop(message_text: str):
             else:
                 logger.info("No unread messages found.")
                 
-                # Still wait for 2 seconds before checking again if no messages were found
+                # Wait for 2 seconds before checking again if no messages were found
                 logger.info("Waiting for 2 seconds before next check.")
                 time.sleep(2)
         
         except Exception as e:
             logger.error(f"An error occurred: {e}")
-        
-        # Calculate the time elapsed and adjust the next sleep duration
+
+        # Adjust sleep duration based on whether messages were sent
         elapsed_time = time.time() - start_time
-        if contact_names:
-            # If messages were sent, ensure there's a 2-second wait
-            sleep_time = max(2 - elapsed_time, 0)
-        else:
-            # If no messages were sent, wait for 2 seconds
-            sleep_time = 2
-        
+        sleep_time = max(2 - elapsed_time, 0)
         logger.info(f"Sleeping for {sleep_time} seconds before next check.")
         time.sleep(sleep_time)
 

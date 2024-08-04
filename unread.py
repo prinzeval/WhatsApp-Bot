@@ -37,7 +37,7 @@ def navigate_to_whatsapp():
         time.sleep(10)  # Wait for WhatsApp to load
 
 def get_unread_messages() -> List[str]:
-    contact_names = []
+    contact_names = set()  # Use a set to avoid duplicates
     try:
         logger.info("Getting unread messages...")
         navigate_to_whatsapp()
@@ -56,15 +56,14 @@ def get_unread_messages() -> List[str]:
                     contact_name_span = div.find('span', dir="auto", style="min-height: 0px;")
                     if contact_name_span:
                         contact_name = contact_name_span.text
-                        if contact_name not in contact_names:  # Avoid duplicates in this list
-                            contact_names.append(contact_name)
+                        contact_names.add(contact_name)  # Add to set
 
-        logger.info(f"Contacts extracted: {contact_names}")
+        logger.info(f"Contacts extracted: {list(contact_names)}")
 
     except Exception as e:
         logger.error(f"An error occurred while getting unread messages: {e}")
 
-    return contact_names
+    return list(contact_names)  # Convert set back to list
 
 def send_whatsapp_message(recipient_name: str, message_text: str):
     try:
