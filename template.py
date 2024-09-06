@@ -1,24 +1,5 @@
 
 
-    # # Calculate center of the viewport
-    # body = driver.find_element(By.TAG_NAME, 'body')
-    # width = body.size['width']
-    # height = body.size['height']
-    # center_x = width / 2
-    # center_y = height / 2
-
-    # # Function to click at the center of the screen
-    # def click_center(x, y):
-    #     actions = ActionChains(driver)
-    #     actions.move_by_offset(x, y).click().perform()
-    
-    # # Perform 8 clicks at the center with a 2-second interval
-    # for i in range(8):
-    #     click_center(center_x, center_y)
-    #     print(f'Click {i + 1} at center ({center_x}, {center_y})')
-    #     time.sleep(2) 
-
-
 
 
 
